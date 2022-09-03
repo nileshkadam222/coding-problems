@@ -20,7 +20,6 @@ public class BalancedBrackets {
         Stack<Character> stack = new Stack<>();
 
         for(int i=0;i<expr.length();i++){
-
             char currentElement = expr.charAt(i);
             if(currentElement == '(' || currentElement == '{' || currentElement == '['){
                 stack.push(currentElement);
@@ -31,7 +30,6 @@ public class BalancedBrackets {
             }
 
             char check;
-
             switch (currentElement){
                 case ')':{
                     check = stack.pop();
@@ -55,7 +53,6 @@ public class BalancedBrackets {
                     break;
                 }
             }
-
         }
         return stack.isEmpty();
     }
