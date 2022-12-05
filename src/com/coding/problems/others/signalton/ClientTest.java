@@ -1,4 +1,6 @@
-package testing.streams.Design.signalton;
+package com.coding.problems.others.signalton;
+
+import com.coding.problems.others.streams.Design.signalton.*;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

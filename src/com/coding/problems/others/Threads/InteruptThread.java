@@ -1,6 +1,4 @@
-package testing.DurgaSir.Threads;
-
-import java.lang.System.Logger;
+package com.coding.problems.others.Threads;
 
 class MyDemoThreadClass extends Thread{
 	@Override

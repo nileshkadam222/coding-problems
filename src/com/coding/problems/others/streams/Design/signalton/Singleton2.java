@@ -1,4 +1,4 @@
-package testing.streams.Design.signalton;
+package com.coding.problems.others.streams.Design.signalton;
 
 
 //Static Block Initalization

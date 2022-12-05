@@ -1,4 +1,4 @@
-package testing.streams.Design.signalton;
+package com.coding.problems.others.streams.Design.signalton;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
