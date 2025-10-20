@@ -7,6 +7,9 @@ public class ReverseNumber {
         int reverse = 0;
         while (num > 0){
             int ld = num % 10;
+            if(reverse > (Integer.MAX_VALUE - ld) / 10){
+                return 0;
+            }
             reverse = reverse * 10 + ld;
             num =  num/10;
         }
@@ -16,5 +19,6 @@ public class ReverseNumber {
     public static void main(String[] args) {
         System.out.println(reverseNumber(123));
         System.out.println(reverseNumber(-123));
+        System.out.println(reverseNumber(1534236469));
     }
 }
