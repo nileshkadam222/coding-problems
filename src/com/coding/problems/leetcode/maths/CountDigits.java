@@ -1,4 +1,4 @@
-package com.coding.problems.leetcode;
+package com.coding.problems.leetcode.maths;
 
 public class CountDigits {
 
