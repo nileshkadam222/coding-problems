@@ -1,6 +1,5 @@
-package testing.DurgaSir.TreeSet;
+package com.coding.problems.others.TreeSet;
 
-import java.util.Comparator;
 import java.util.TreeSet;
 
 class Employee implements Comparable {
@@ -21,7 +20,7 @@ class Employee implements Comparable {
 		int eid1 = this.id;
 		Employee e = (Employee) o;
 		int eid2 = e.id;
-		return (eid1 < eid2) ? -1 : (eid1 > eid2) ? 1 : 0;
+		return Integer.compare(eid1, eid2);
 	}
 
 }
@@ -29,9 +28,7 @@ class Employee implements Comparable {
 public class ComparableAndComparator {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		TreeSet t = new TreeSet();
+		TreeSet<Employee> t = new TreeSet<>();
 		Employee e = new Employee("Nilesh", 2);
 		Employee e1 = new Employee("Harshu", 1);
 		Employee e2 = new Employee("Yogesh", 4);
@@ -41,7 +38,6 @@ public class ComparableAndComparator {
 		t.add(e2);
 		t.add(e3);
 		System.out.println("ASC Sorting"+ t);
-		
 	}
 
 }
