@@ -16,8 +16,26 @@ class factorial{
 		return factorial;
 	}
 
+
+    // 120 -> 1
+    // 123	-> 0
+    private static int trallingZero(int number){
+        int count = 0;
+        while(number != 0){
+            int lastDigit = number % 10;
+            if(lastDigit != 0){
+                break;
+            }
+            count ++;
+            number = number /10;
+        }
+        return  count;
+    }
+
 	public static void main(String[] args){
-		System.out.println("5 -> " + getFactorial(5));
-		System.out.println("3 -> " + getFactorial(3));
+        int factOfFive = getFactorial(5);
+        int factOfThree = getFactorial(3);
+        System.out.println("5 -> " + factOfFive +  " Zero -> " + trallingZero(factOfFive));
+        System.out.println("3 -> " + factOfThree +  " Zero -> " + trallingZero(factOfThree));
 	}
 }
