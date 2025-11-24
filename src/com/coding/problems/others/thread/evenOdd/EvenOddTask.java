@@ -2,9 +2,11 @@ package com.coding.problems.others.thread.evenOdd;
 
 public class EvenOddTask {
 
+
     int counter = 1;
 
     static int N;
+
 
     public void printOddNumber()
     {
@@ -21,7 +23,7 @@ public class EvenOddTask {
                         e.printStackTrace();
                     }
                 }
-                System.out.print(counter + " ");
+                System.out.println("Odd : "+ counter);
                 counter++;
                 notify();
             }
@@ -44,8 +46,7 @@ public class EvenOddTask {
                         e.printStackTrace();
                     }
                 }
-                System.out.print(
-                        counter + " ");
+                System.out.println("Even: "+ counter);
                 counter++;
                 notify();
             }
