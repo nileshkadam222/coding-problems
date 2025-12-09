@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class Student implements Comparable<Student>{
+class student implements Comparable<student>{
     private final String firstName;
     private final String lastName;
 
@@ -16,13 +16,13 @@ class Student implements Comparable<Student>{
                 '}';
     }
 
-    public Student(String firstName, String lastName) {
+    public student(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
     @Override
-    public int compareTo(Student o) {
+    public int compareTo(student o) {
         int byFirstName = this.firstName.compareTo(o.firstName);
         if (byFirstName == 0){
            return this.lastName.compareTo(o.lastName);
@@ -34,13 +34,13 @@ class Student implements Comparable<Student>{
 public class SortListByNameAndAgeUsingComparable {
 
     public static void main(String[] args) {
-        List<Student> students = new ArrayList<>();
-        students.add(new Student("Nilesh", "Patil"));
-        students.add(new Student("Amit", "Sharma"));
-        students.add(new Student("Ravi", "Kumar"));
-        students.add(new Student("Amit", "Aharma"));
-        students.add(new Student("Amit", "Verma"));
-        students.add(new Student("Sneha", "Joshi"));
+        List<student> students = new ArrayList<>();
+        students.add(new student("Nilesh", "Patil"));
+        students.add(new student("Amit", "Sharma"));
+        students.add(new student("Ravi", "Kumar"));
+        students.add(new student("Amit", "Aharma"));
+        students.add(new student("Amit", "Verma"));
+        students.add(new student("Sneha", "Joshi"));
 
 
         Collections.sort(students);
