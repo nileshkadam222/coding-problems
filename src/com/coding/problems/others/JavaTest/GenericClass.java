@@ -1,4 +1,4 @@
-package testing.GeeksExamples.JavaTest;
+package com.coding.problems.others.JavaTest;
 
 import java.util.Scanner;
 
